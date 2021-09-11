@@ -12,6 +12,14 @@
 		13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB51A68108700A75B9A /* Images.xcassets */; };
 		13B07FC11A68108700A75B9A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB71A68108700A75B9A /* main.m */; };
 		6172F2D35A4C3AA820D92908 /* libPods-smartWatch.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6423831EA8574132BED9D8CC /* libPods-smartWatch.a */; };
+		7DFBEDF626ECF831000752B2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7DFBEDF526ECF831000752B2 /* Assets.xcassets */; };
+		7DFBEDFD26ECF832000752B2 /* smartWatchApp Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 7DFBEDFC26ECF832000752B2 /* smartWatchApp Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		7DFBEE0226ECF832000752B2 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DFBEE0126ECF832000752B2 /* ContentView.swift */; };
+		7DFBEE0426ECF832000752B2 /* smartWatchApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DFBEE0326ECF832000752B2 /* smartWatchApp.swift */; };
+		7DFBEE0626ECF832000752B2 /* ComplicationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DFBEE0526ECF832000752B2 /* ComplicationController.swift */; };
+		7DFBEE0826ECF832000752B2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7DFBEE0726ECF832000752B2 /* Assets.xcassets */; };
+		7DFBEE0B26ECF832000752B2 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7DFBEE0A26ECF832000752B2 /* Preview Assets.xcassets */; };
+		7DFBEE0F26ECF832000752B2 /* smartWatchApp.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 7DFBEDF326ECF82F000752B2 /* smartWatchApp.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		7EF68E3733C33B6898317E18 /* libPods-smartWatch-smartWatchTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = ABFE59519B596E51CEFDCCC0 /* libPods-smartWatch-smartWatchTests.a */; };
 		81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
@@ -24,7 +32,46 @@
 			remoteGlobalIDString = 13B07F861A680F5B00A75B9A;
 			remoteInfo = smartWatch;
 		};
+		7DFBEDFE26ECF832000752B2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 83CBB9F71A601CBA00E9B192 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7DFBEDFB26ECF832000752B2;
+			remoteInfo = "smartWatchApp Extension";
+		};
+		7DFBEE0D26ECF832000752B2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 83CBB9F71A601CBA00E9B192 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7DFBEDF226ECF82F000752B2;
+			remoteInfo = smartWatchApp;
+		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		7DFBEE1326ECF832000752B2 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				7DFBEDFD26ECF832000752B2 /* smartWatchApp Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7DFBEE1726ECF832000752B2 /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				7DFBEE0F26ECF832000752B2 /* smartWatchApp.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		00E356EE1AD99517003FC87E /* smartWatchTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = smartWatchTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -39,6 +86,16 @@
 		1D0AE47A65C8663E3B452821 /* Pods-smartWatch-smartWatchTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-smartWatch-smartWatchTests.release.xcconfig"; path = "Target Support Files/Pods-smartWatch-smartWatchTests/Pods-smartWatch-smartWatchTests.release.xcconfig"; sourceTree = "<group>"; };
 		6423831EA8574132BED9D8CC /* libPods-smartWatch.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-smartWatch.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		6C97AB639B58BBB4B15BBE30 /* Pods-smartWatch-smartWatchTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-smartWatch-smartWatchTests.debug.xcconfig"; path = "Target Support Files/Pods-smartWatch-smartWatchTests/Pods-smartWatch-smartWatchTests.debug.xcconfig"; sourceTree = "<group>"; };
+		7DFBEDF326ECF82F000752B2 /* smartWatchApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = smartWatchApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		7DFBEDF526ECF831000752B2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		7DFBEDF726ECF831000752B2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7DFBEDFC26ECF832000752B2 /* smartWatchApp Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "smartWatchApp Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		7DFBEE0126ECF832000752B2 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		7DFBEE0326ECF832000752B2 /* smartWatchApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = smartWatchApp.swift; sourceTree = "<group>"; };
+		7DFBEE0526ECF832000752B2 /* ComplicationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComplicationController.swift; sourceTree = "<group>"; };
+		7DFBEE0726ECF832000752B2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		7DFBEE0A26ECF832000752B2 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		7DFBEE0C26ECF832000752B2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = LaunchScreen.storyboard; path = smartWatch/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		ABFE59519B596E51CEFDCCC0 /* libPods-smartWatch-smartWatchTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-smartWatch-smartWatchTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C0A881CF5CF3F2B244570E2A /* Pods-smartWatch.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-smartWatch.debug.xcconfig"; path = "Target Support Files/Pods-smartWatch/Pods-smartWatch.debug.xcconfig"; sourceTree = "<group>"; };
@@ -60,6 +117,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				6172F2D35A4C3AA820D92908 /* libPods-smartWatch.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7DFBEDF926ECF832000752B2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -106,6 +170,36 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		7DFBEDF426ECF82F000752B2 /* smartWatchApp */ = {
+			isa = PBXGroup;
+			children = (
+				7DFBEDF526ECF831000752B2 /* Assets.xcassets */,
+				7DFBEDF726ECF831000752B2 /* Info.plist */,
+			);
+			path = smartWatchApp;
+			sourceTree = "<group>";
+		};
+		7DFBEE0026ECF832000752B2 /* smartWatchApp Extension */ = {
+			isa = PBXGroup;
+			children = (
+				7DFBEE0126ECF832000752B2 /* ContentView.swift */,
+				7DFBEE0326ECF832000752B2 /* smartWatchApp.swift */,
+				7DFBEE0526ECF832000752B2 /* ComplicationController.swift */,
+				7DFBEE0726ECF832000752B2 /* Assets.xcassets */,
+				7DFBEE0C26ECF832000752B2 /* Info.plist */,
+				7DFBEE0926ECF832000752B2 /* Preview Content */,
+			);
+			path = "smartWatchApp Extension";
+			sourceTree = "<group>";
+		};
+		7DFBEE0926ECF832000752B2 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				7DFBEE0A26ECF832000752B2 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
 		832341AE1AAA6A7D00B99B32 /* Libraries */ = {
 			isa = PBXGroup;
 			children = (
@@ -119,6 +213,8 @@
 				13B07FAE1A68108700A75B9A /* smartWatch */,
 				832341AE1AAA6A7D00B99B32 /* Libraries */,
 				00E356EF1AD99517003FC87E /* smartWatchTests */,
+				7DFBEDF426ECF82F000752B2 /* smartWatchApp */,
+				7DFBEE0026ECF832000752B2 /* smartWatchApp Extension */,
 				83CBBA001A601CBA00E9B192 /* Products */,
 				2D16E6871FA4F8E400B85C8A /* Frameworks */,
 				E233CBF5F47BEE60B243DCF8 /* Pods */,
@@ -133,6 +229,8 @@
 			children = (
 				13B07F961A680F5B00A75B9A /* smartWatch.app */,
 				00E356EE1AD99517003FC87E /* smartWatchTests.xctest */,
+				7DFBEDF326ECF82F000752B2 /* smartWatchApp.app */,
+				7DFBEDFC26ECF832000752B2 /* smartWatchApp Extension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -145,7 +243,6 @@
 				6C97AB639B58BBB4B15BBE30 /* Pods-smartWatch-smartWatchTests.debug.xcconfig */,
 				1D0AE47A65C8663E3B452821 /* Pods-smartWatch-smartWatchTests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -185,15 +282,51 @@
 				00DD1BFF1BD5951E006B06BC /* Bundle React Native code and images */,
 				C8AC78B0264D0F9F6F6D630E /* [CP] Embed Pods Frameworks */,
 				ADC9DDC32298B72B3CF5DC8E /* [CP] Copy Pods Resources */,
+				7DFBEE1726ECF832000752B2 /* Embed Watch Content */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				7DFBEE0E26ECF832000752B2 /* PBXTargetDependency */,
 			);
 			name = smartWatch;
 			productName = smartWatch;
 			productReference = 13B07F961A680F5B00A75B9A /* smartWatch.app */;
 			productType = "com.apple.product-type.application";
+		};
+		7DFBEDF226ECF82F000752B2 /* smartWatchApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7DFBEE1426ECF832000752B2 /* Build configuration list for PBXNativeTarget "smartWatchApp" */;
+			buildPhases = (
+				7DFBEDF126ECF82F000752B2 /* Resources */,
+				7DFBEE1326ECF832000752B2 /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				7DFBEDFF26ECF832000752B2 /* PBXTargetDependency */,
+			);
+			name = smartWatchApp;
+			productName = smartWatchApp;
+			productReference = 7DFBEDF326ECF82F000752B2 /* smartWatchApp.app */;
+			productType = "com.apple.product-type.application.watchapp2";
+		};
+		7DFBEDFB26ECF832000752B2 /* smartWatchApp Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7DFBEE1026ECF832000752B2 /* Build configuration list for PBXNativeTarget "smartWatchApp Extension" */;
+			buildPhases = (
+				7DFBEDF826ECF832000752B2 /* Sources */,
+				7DFBEDF926ECF832000752B2 /* Frameworks */,
+				7DFBEDFA26ECF832000752B2 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "smartWatchApp Extension";
+			productName = "smartWatchApp Extension";
+			productReference = 7DFBEDFC26ECF832000752B2 /* smartWatchApp Extension.appex */;
+			productType = "com.apple.product-type.watchkit2-extension";
 		};
 /* End PBXNativeTarget section */
 
@@ -201,6 +334,7 @@
 		83CBB9F71A601CBA00E9B192 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				LastSwiftUpdateCheck = 1250;
 				LastUpgradeCheck = 1210;
 				TargetAttributes = {
 					00E356ED1AD99517003FC87E = {
@@ -209,6 +343,12 @@
 					};
 					13B07F861A680F5B00A75B9A = {
 						LastSwiftMigration = 1120;
+					};
+					7DFBEDF226ECF82F000752B2 = {
+						CreatedOnToolsVersion = 12.5;
+					};
+					7DFBEDFB26ECF832000752B2 = {
+						CreatedOnToolsVersion = 12.5;
 					};
 				};
 			};
@@ -227,6 +367,8 @@
 			targets = (
 				13B07F861A680F5B00A75B9A /* smartWatch */,
 				00E356ED1AD99517003FC87E /* smartWatchTests */,
+				7DFBEDF226ECF82F000752B2 /* smartWatchApp */,
+				7DFBEDFB26ECF832000752B2 /* smartWatchApp Extension */,
 			);
 		};
 /* End PBXProject section */
@@ -245,6 +387,23 @@
 			files = (
 				81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */,
 				13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7DFBEDF126ECF82F000752B2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7DFBEDF626ECF831000752B2 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7DFBEDFA26ECF832000752B2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7DFBEE0B26ECF832000752B2 /* Preview Assets.xcassets in Resources */,
+				7DFBEE0826ECF832000752B2 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -416,6 +575,16 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		7DFBEDF826ECF832000752B2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7DFBEE0226ECF832000752B2 /* ContentView.swift in Sources */,
+				7DFBEE0426ECF832000752B2 /* smartWatchApp.swift in Sources */,
+				7DFBEE0626ECF832000752B2 /* ComplicationController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -423,6 +592,16 @@
 			isa = PBXTargetDependency;
 			target = 13B07F861A680F5B00A75B9A /* smartWatch */;
 			targetProxy = 00E356F41AD99517003FC87E /* PBXContainerItemProxy */;
+		};
+		7DFBEDFF26ECF832000752B2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 7DFBEDFB26ECF832000752B2 /* smartWatchApp Extension */;
+			targetProxy = 7DFBEDFE26ECF832000752B2 /* PBXContainerItemProxy */;
+		};
+		7DFBEE0E26ECF832000752B2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 7DFBEDF226ECF82F000752B2 /* smartWatchApp */;
+			targetProxy = 7DFBEE0D26ECF832000752B2 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -525,6 +704,140 @@
 				PRODUCT_NAME = smartWatch;
 				SWIFT_VERSION = 5.0;
 				VERSIONING_SYSTEM = "apple-generic";
+			};
+			name = Release;
+		};
+		7DFBEE1126ECF832000752B2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_STYLE = Automatic;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_ASSET_PATHS = "\"smartWatchApp Extension/Preview Content\"";
+				DEVELOPMENT_TEAM = WC5NLRZABZ;
+				ENABLE_PREVIEWS = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				INFOPLIST_FILE = "smartWatchApp Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = org.reactjs.native.example.smartWatch.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 7.4;
+			};
+			name = Debug;
+		};
+		7DFBEE1226ECF832000752B2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_STYLE = Automatic;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_ASSET_PATHS = "\"smartWatchApp Extension/Preview Content\"";
+				DEVELOPMENT_TEAM = WC5NLRZABZ;
+				ENABLE_PREVIEWS = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				INFOPLIST_FILE = "smartWatchApp Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = org.reactjs.native.example.smartWatch.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 7.4;
+			};
+			name = Release;
+		};
+		7DFBEE1526ECF832000752B2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_STYLE = Automatic;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				IBSC_MODULE = smartWatchApp_Extension;
+				INFOPLIST_FILE = smartWatchApp/Info.plist;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = org.reactjs.native.example.smartWatch.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 7.4;
+			};
+			name = Debug;
+		};
+		7DFBEE1626ECF832000752B2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_STYLE = Automatic;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				IBSC_MODULE = smartWatchApp_Extension;
+				INFOPLIST_FILE = smartWatchApp/Info.plist;
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = org.reactjs.native.example.smartWatch.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 7.4;
 			};
 			name = Release;
 		};
@@ -668,6 +981,24 @@
 			buildConfigurations = (
 				13B07F941A680F5B00A75B9A /* Debug */,
 				13B07F951A680F5B00A75B9A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7DFBEE1026ECF832000752B2 /* Build configuration list for PBXNativeTarget "smartWatchApp Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7DFBEE1126ECF832000752B2 /* Debug */,
+				7DFBEE1226ECF832000752B2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7DFBEE1426ECF832000752B2 /* Build configuration list for PBXNativeTarget "smartWatchApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7DFBEE1526ECF832000752B2 /* Debug */,
+				7DFBEE1626ECF832000752B2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
